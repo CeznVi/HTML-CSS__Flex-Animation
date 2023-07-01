@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    max-width: 100%;
+}
+
+.road {
+    border: 3px solid black;
+    position: relative;
+    height: 300px;
+    background-image: url("/static/img/road.webp");
+    background-size: 215px;
+}
+.finish {
+    width: 30px;
+    height: 100%;
+    background-image: repeating-linear-gradient(to right, black, white 10%, green 20%);
+    position: absolute;
+    right: 5%;
+    top: 0px;
+}
+.car {
+    position: relative;
+    border: 1px solid red;
+    width: 150px;
+    height: 80px;
+    margin: 15px 0px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(1,.05,.96,.2)
+
+}
+.c_0 {
+    transform: scaleX(-1);
+    transition-duration: 1.5s;
+}
+.c_1 {
+    transform: scaleX(-1);
+    transition-duration: 1.0s;
+}
+.c_2 {
+    transition-duration: 3.0s;
+}
+
+/* ! КОГДА НАВОДИТСЯ КУРСОР НА ДОРОГУ */
+.road:hover .car{
+    margin-left: 85%;
+}
+
+.road:hover .whell{
+    transform: rotate(-3000deg);
+}
+
+.whell{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: black;
+    border-radius: 12px;
+}
+
+.LeftWhellCar0{
+    right: 21px;
+    top: 50px;
+    transition: transform 1.5s ease-in-out;
+}
+
+.RightWhellCar0{
+    right: 109px;
+    top: 51px;
+    transition: transform 1.5s ease-in-out;
+}
+
+.LeftWhellCar1{
+    right: 21px;
+    top: 41px;
+    transition: transform 1.2s ease-in-out;
+}
+
+.RightWhellCar1{
+    right: 97px;
+    top: 43px;
+    transition: transform 1.2s ease-in-out;
+}
+
+.LeftWhellCar2{
+    width: 20px;
+    height: 20px;
+    right: 33px;
+    top: 48px;
+    transition: transform 3.4s ease-in-out;
+}
+
+.RightWhellCar2{
+    width: 20px;
+    height: 20px;
+    right: 100px;
+    top: 48px;
+    transition: transform 3.4s ease-in-out;
+}
