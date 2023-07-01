@@ -9,8 +9,6 @@ img {
     max-width: 100%;
 }
 
-
-
 .FlexGaleryConatiner{
     margin-top: 45px;
     display: flex;
@@ -31,7 +29,17 @@ img {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: -20px;
+    transition-property: all;
+    transition-duration: 2.5s;
 }
+
+.ElementGallery:hover{
+    transform: rotate(-0deg) !important;
+    z-index: 1;
+    width: 600px;
+    height: 500px;
+}
+
 
 /* * Первые 4 елемента */
 .ElementGallery:nth-child(-n+4){
