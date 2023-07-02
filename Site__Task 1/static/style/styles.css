@@ -13,7 +13,7 @@ img {
     border: 3px solid black;
     position: relative;
     height: 300px;
-    background-image: url("/static/img/road.webp");
+    background-image: url("../img/road.webp");
     background-size: 215px;
 }
 .finish {
